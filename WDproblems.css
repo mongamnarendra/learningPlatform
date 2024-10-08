@@ -65,4 +65,123 @@ nav button {
     outline: none;
     border-radius: 5px;
     margin-right: 20px;
+    cursor: pointer;
+    transition: scale .3s linear;
 }
+
+.button button:hover {
+    transform: scale(1.1);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* -----------------------main area------------------------------- */
+
+.container {
+    display: flex;
+}
+
+aside {
+    width: 20%;
+    height: 89vh;
+    background-color: #222;
+    margin-left: 10px;
+}
+
+.problems-container {
+    width: 77.4%;
+    height: 89vh;
+    background-color: #222;
+    margin-left: 10px;
+    
+}
+
+
+/* ------------------------------aside---------------------------- */
+
+aside {
+    display: flex;
+}
+
+.timeline {
+    width: 5px;
+    height: 90%;
+    background-color: white;
+    margin: 20px 10px 0px 50px;
+    border-radius: 50px;
+    position: relative;
+}
+
+aside span {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: orangered;
+    top: 5%;
+    left: -5px;
+}
+
+aside .second {
+    position: absolute;
+    top: 17.5%;
+}
+
+aside .third {
+    position: absolute;
+    top: 29.5%;
+}
+
+aside .fourth {
+    position: absolute;
+    top: 42%;
+}
+
+aside .fifth {
+    position: absolute;
+    top: 54%;
+}
+
+aside p {
+    width: 100px;
+
+}
+
+aside .timeline-content {
+    margin: 27px 10px 0px 15px;
+    cursor: pointer;
+}
+
+.timeline-content p:hover {
+    transform: scale(0.9);
+    color: orangered;
+}
+
+
+aside .timeline-content p {
+    padding: 20px 0px 30px;
+}
+
+.timeline-status {
+    position: absolute;
+    top: 0;
+    width: 5px;
+    height: 10%;
+    background-color: orangered;
+    animation: time .6s linear;
+}
+
+@keyframes time {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 10%;
+    }
+}
+

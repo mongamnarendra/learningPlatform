@@ -187,6 +187,7 @@ nav ul li a {
     animation: title .3s linear;
     animation-timeline: view();
     animation-range: 0px 300px;
+    
 }
 
 @keyframes title {
@@ -309,7 +310,6 @@ nav ul li a {
     margin-right: 10px;
     animation: wrapper-slide 6s linear;
     animation-iteration-count: infinite;
-    
 }
 
 @keyframes wrapper-slide {
