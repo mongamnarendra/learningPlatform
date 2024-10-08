@@ -65,8 +65,18 @@ nav button {
     outline: none;
     border-radius: 5px;
     margin-right: 20px;
+    cursor: pointer;
+    transition: scale .3s linear;
 }
 
+.button button:hover {
+    transform: scale(1.1);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
 
 /* ------------------hero section--------------------------------- */
 
@@ -208,6 +218,7 @@ nav button {
     margin-bottom: 0;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
     animation: cardanime .3s linear;
     animation-timeline: view();
     animation-range: 0px 600px;
@@ -606,7 +617,7 @@ nav button {
 }
 
 .footer-links ul li a:hover {
-    color: #fff;
+    color: orangered;
 }
 
 /* Social Media Section */
