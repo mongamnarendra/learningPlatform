@@ -92,13 +92,7 @@ aside {
     margin-left: 10px;
 }
 
-.problems-container {
-    width: 77.4%;
-    height: 89vh;
-    background-color: #222;
-    margin-left: 10px;
-    
-}
+
 
 
 /* ------------------------------aside---------------------------- */
@@ -184,4 +178,126 @@ aside .timeline-content p {
         height: 10%;
     }
 }
+
+
+/* ----------------------------problem container--------------------- */
+
+.problems-container {
+    width: 77.4%;
+    height: 89vh;
+    background-color: #222;
+    margin-left: 10px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    overflow: auto;
+}
+
+.main-heading {
+    margin-left: 20px;
+}
+
+.main-heading ul li {
+    margin-left: 60px;
+}
+
+.problems-container h2 {
+    text-align: center;
+}
+
+/* -----------------------Problems list----------------------- */
+.Problems-List {
+    margin-top: 20px;
+    color: #111;
+}
+
+.HTML-Problems {
+    margin: 20px 40px;
+}
+
+.HTML-Problems input {
+    display: none;
+}
+
+.faq-question {
+    display: block;
+    width: 90%;
+    height: 50px;
+    background-color: white;
+    padding: 10px 0px 0px 20px;
+    cursor: pointer;
+    transition: background .3s ease-in;
+    border-radius: 5px;
+    
+}
+
+.faq-question:hover {
+    background-color: orangered;
+}
+
+.faq-answer {
+    display: none;
+    width: 90%;
+    background-color: white;
+    padding: 10px 0px 0px 20px;
+}
+
+#faq1:checked ~ .faq-question{
+    background-color: orangered;
+}
+
+#faq1:checked ~ .faq-answer {
+    display: block;
+}
+
+.faq-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq-content .symbol {
+    margin-right: 30px;
+    font-size: 1.8rem;
+    margin-top: -10px;
+}
+
+
+/* ----------------------sub topics--------------------- */
+.html-topics {
+    background-color: #222;
+}
+.topic1 {
+    width: 90%;
+    padding: 10px;
+    background-color: #111;
+    display: block;
+}
+
+.topics-answer {
+    display: none;
+}
+
+#html1:checked ~ .topics-answer {
+    display: block;
+}
+
+
+/* 
+--------------------answer table----------------------- */
+/* 
+table tr th {
+    border: 1px solid black;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
