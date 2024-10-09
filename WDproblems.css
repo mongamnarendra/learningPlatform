@@ -531,6 +531,52 @@ tr, td, th{
 }
 
 
+/* -------------------DevOps---------------------- */
+
+#devops, #version-control-systems, #build-tools, #ci-cd {
+    display: none;
+}
+
+#devops:checked ~ .devops-answers  {
+    display: block;
+}
+
+#version-control-systems:checked ~ .version-control-systems-answer  {
+    display: block;
+}
+
+#build-tools:checked ~ .build-tools-answer  {
+    display: block;
+}
+
+#ci-cd:checked ~ .ci-cd-answer {
+    display: block;
+}
+
+
+
+/* -------------------------------testing--------------------------------- */
+
+#testing, #unit-testing, #integration-testing, #frontend-testing {
+    display: none;
+}
+
+#testing:checked ~ .testing-answers  {
+    display: block;
+}
+
+#unit-testing:checked ~ .unit-testing-answer  {
+    display: block;
+}
+
+#integration-testing:checked ~ .integration-testing-answer  {
+    display: block;
+}
+
+#frontend-testing:checked ~ .frontend-testing-answer {
+    display: block;
+}
+
 
 
 
