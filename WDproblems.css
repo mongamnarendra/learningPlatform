@@ -180,6 +180,7 @@ aside .timeline-content p {
 }
 
 
+
 /* ----------------------------problem container--------------------- */
 
 .problems-container {
@@ -214,7 +215,7 @@ aside .timeline-content p {
     margin: 20px 40px;
 }
 
-.HTML-Problems input {
+#faq1 {
     display: none;
 }
 
@@ -236,13 +237,19 @@ aside .timeline-content p {
 
 .faq-answer {
     display: none;
-    width: 90%;
-    background-color: white;
-    padding: 10px 0px 0px 20px;
+    width: 90%; 
+    background-color: #111;
+    color: white;
+    padding: 10px 0px 10px 20px;
+    box-sizing: border-box; 
 }
 
 #faq1:checked ~ .faq-question{
     background-color: orangered;
+}
+
+#faq1:checked  .timeline-status {
+    height: 20%;
 }
 
 #faq1:checked ~ .faq-answer {
@@ -262,31 +269,83 @@ aside .timeline-content p {
 
 
 /* ----------------------sub topics--------------------- */
-.html-topics {
-    background-color: #222;
+
+#html1, #html2, #html3, #html4, #html5, #html6, #html7, #html8, #css {
+    display: none;
 }
 .topic1 {
-    width: 90%;
+    width: 98%;
+    background-color: #222;
+    display: block;
     padding: 10px;
-    background-color: #111;
+    cursor: pointer;
+    margin-bottom: 30px;
+    box-shadow: 3px 5px 10px orangered;
+}
+
+.topic1-answer {
+    display: none;
+    margin: 0px 0px 10px 0px;
+    background-color: #333;
+    width: 98%;
+}
+
+#html1:checked ~ .topic1-answer {
     display: block;
 }
 
-.topics-answer {
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+     
+}
+
+tr, td, th{
+    border: 1px solid black;
+}
+
+#html2:checked ~ .topic2-answer {
+    display: block;
+}
+
+#html3 {
     display: none;
 }
 
-#html1:checked ~ .topics-answer {
+#html3:checked ~ .topic3-answer {
+    display: block;
+}
+
+#html4:checked ~ .topic4-answer {
+    display: block;
+}
+
+#html5:checked ~ .topic5-answer {
+    display: block;
+}
+
+#html6:checked ~ .topic6-answer {
+    display: block;
+}
+
+#html7:checked ~ .topic7-answer {
+    display: block;
+}
+
+#html8:checked ~ .topic8-answer {
     display: block;
 }
 
 
-/* 
---------------------answer table----------------------- */
-/* 
-table tr th {
-    border: 1px solid black;
-} */
+#css:checked ~ .css-answers  {
+    display: block;
+}
+
+
+
+
 
 
 
