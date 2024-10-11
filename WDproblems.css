@@ -531,6 +531,39 @@ tr, td, th{
 }
 
 
+/* ------------------------database------------------------- */
+
+#database:checked ~ .database-answers  {
+    display: block;
+}
+
+#database1:checked ~ .database1-answer {
+    display: block;
+}
+
+#database2:checked ~ .database2-answer {
+    display: block;
+}
+
+#database3:checked ~ .database3-answer {
+    display: block;
+}
+
+#database4:checked ~ .database4-answer {
+    display: block;
+}
+
+#database5:checked ~ .database5-answer {
+    display: block;
+}
+
+#database6:checked ~ .database6-answer {
+    display: block;
+}
+
+
+
+
 /* -------------------DevOps---------------------- */
 
 #devops, #version-control-systems, #build-tools, #ci-cd {
