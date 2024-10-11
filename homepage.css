@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 body{
     background-color: #111;
@@ -19,10 +19,10 @@ nav{
     position: fixed;
     top: 0;
     z-index: 1;
-    /* box-shadow:  0 0 10px orange,
-    0 0 20px orange,
-    0 0 40px orange,
-    0 0 80px orange; */
+    box-shadow:  0 0 10px orangered,
+    0 0 20px orangered,
+    0 0 3px orangered,
+    0 0 40px orangered;
 }
 .logo h1{
     font-size: 32px;
@@ -68,15 +68,16 @@ nav a:hover span{
 }
 button{
     width: 80px;
-    height: 30px;
+    height: 40px;
     padding: 2%;
     margin: 0 20px 0 0;
-    border-radius: 15px;
+    border-radius: 10px;
     background-color: orangered;
     color: #fff;
     font-weight: 500;
     transition: transform 450ms;
     cursor: pointer;
+    outline: none;
 }
 button:hover{
     transform: scale(1.2);
