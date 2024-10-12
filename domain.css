@@ -1,7 +1,8 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 body{
     background-color: #111;
@@ -25,11 +26,21 @@ nav{
     0 0 3px orangered,
     0 0 40px orangered;
 }
+
+.logo h1{
+    font-size: 32px;
+    text-shadow: 0 0 10px orangered,
+                 0 0 20px orangered,
+                 0 0 40px orangered,
+                 0 0 80px orangered;
+}
+
 .links{
     width: 80%;
     display: flex;
     justify-content: center;
 }
+
 nav a{
     position: relative;
     text-decoration: none;
@@ -40,6 +51,7 @@ nav a{
     justify-content: space-between;
     transition: .5s;
 }
+
 nav a:hover{
     color: Orangered;
 }
@@ -60,32 +72,26 @@ nav a:hover span{
     transform:scale(1) translateY(0);
     opacity: 1;
 }
-.logo h1{
-    font-size: 32px;
-    text-shadow: 0 0 10px orangered,
-                 0 0 20px orangered,
-                 0 0 40px orangered,
-                 0 0 80px orangered;
-}
-.join-now{
-    width: 80px;
-    height: 30px;
+button{
+    width: 100px;
+    height: 40px;
     padding: 2%;
+    border: none;
     margin: 0 20px 0 0;
-    border-radius: 15px;
+    border-radius: 10px;
     background-color: orangered;
     color: #fff;
     font-weight: 500;
     transition: transform 450ms;
     cursor: pointer;
+    outline: none;
 }
-.join-now:hover{
+button:hover{
     transform: scale(1.2);
     border: 2px solid white;
-    box-shadow: 0 0 10px orange,
-                 0 0 20px orange,
-                 0 0 40px orange,
-                 0 0 80px orange;
+    box-shadow: 0 0 10px orangered,
+                 0 0 20px orangered;
+                 
 }
 .hero {
     height: 100vh;
