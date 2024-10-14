@@ -118,19 +118,20 @@ nav ul li a {
 
 /* ------------------- Questions Grid ------------------- */
 .questions-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 0 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .question-card {
     background-color: #444;
     border-radius: 10px;
-    padding: 20px;
+    padding: 25px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s, background-color 0.3s;
     cursor: pointer;
+    width: 350px;
+    margin: 0px 0px 30px 0px;
 }
 
 .question-card:hover {
