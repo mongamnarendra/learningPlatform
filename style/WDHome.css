@@ -517,10 +517,6 @@ nav ul li a {
     align-items: center;
 }
 
-.symbol {
-    margin: -10px 30px 0px 0px;
-    font-size: 1.9rem;
-}
 
 .faq-content {
     display: flex;
@@ -554,6 +550,12 @@ nav ul li a {
     animation: display .3s ease-in;
 }
 
+
+.faq-item input:checked ~ .faq-answer {
+    display: block;
+    animation: display 0.5s ease-in;
+}
+
 @keyframes display {
     from{
         opacity: 0;
@@ -562,13 +564,6 @@ nav ul li a {
         opacity: 1;
     }
 }
-
-.faq-item input:checked ~ .faq-answer {
-    display: block;
-    animation: display 0.5s ease-in;
-}
-
-
 
 
 
