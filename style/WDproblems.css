@@ -10,6 +10,10 @@ body {
     color: white;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* ---------------------------navbar------------------------------- */
 
 nav {
@@ -105,9 +109,18 @@ aside {
     display: flex;
 }
 
+.time-line-overall {
+    display: flex;
+    overflow: auto;
+}
+
+.time-line-overall::-webkit-scrollbar {
+    display: none;
+}
+
 .timeline {
     width: 5px;
-    height: 90%;
+    height: 110%;
     background-color: white;
     margin: 20px 10px 0px 50px;
     border-radius: 50px;
@@ -120,28 +133,53 @@ aside span {
     height: 15px;
     border-radius: 50%;
     background-color: orangered;
-    top: 5%;
+    top: 4%;
     left: -5px;
 }
 
-aside .second {
+aside span:nth-child(2) {
     position: absolute;
-    top: 17.5%;
+    top: 14.5%;
 }
 
-aside .third {
+aside span:nth-child(3) {
     position: absolute;
-    top: 29.5%;
+    top: 24%;
 }
 
-aside .fourth {
+aside span:nth-child(4) {
     position: absolute;
-    top: 42%;
+    top: 34.5%;
 }
 
-aside .fifth {
+aside span:nth-child(5) {
     position: absolute;
-    top: 54%;
+    top: 44%;
+}
+
+aside span:nth-child(6) {
+    position: absolute;
+    top: 54.5%;
+}
+
+aside span:nth-child(7) {
+    position: absolute;
+    top: 64.5%;
+}
+
+aside span:nth-child(8) {
+    position: absolute;
+    top: 74.5%;
+}
+
+aside span:nth-child(9) {
+    position: absolute;
+    top: 84.5%;
+}
+
+aside span:nth-child(10) {
+    position: absolute;
+    top: 94.5%;
 }
 
 aside p {
@@ -152,6 +190,10 @@ aside p {
 aside .timeline-content {
     margin: 27px 10px 0px 15px;
     cursor: pointer;
+}
+
+aside .timeline-content::-webkit-scrollbar {
+    display: none;
 }
 
 .timeline-content p:hover {
@@ -168,9 +210,15 @@ aside .timeline-content p {
     position: absolute;
     top: 0;
     width: 5px;
-    height: 10%;
+    height: 8%;
     background-color: orangered;
+    transition: height .6s linear;
     animation: time .6s linear;
+}
+
+aside a {
+    text-decoration: none;
+    color: white;
 }
 
 @keyframes time {
@@ -179,8 +227,13 @@ aside .timeline-content p {
     }
 
     to {
-        height: 10%;
+        height: 8%;
     }
+}
+
+.timeline-content button {
+    background-color: transparent;
+    border: none;
 }
 
 

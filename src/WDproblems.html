@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice Problems</title>
     <link rel="stylesheet" href="../style/WDproblems.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
 </head>
+
 <body>
     <header>
         <nav>
@@ -15,7 +17,7 @@
                 <h2>Path2Master</h2>
             </div>
 
-           
+
             <div>
                 <ul>
                     <li><a href="WDHome.html">Home</a></li>
@@ -28,63 +30,101 @@
                 <a href="Homepage.html"><button>Main Menu</button></a>
                 <button>Join Now</button>
             </div>
-        
+
         </nav>
     </header>
     <main>
         <section class="container">
             <aside id="timeline1">
-                <div class="timeline">
-                    <div class="timeline-status"></div>
-                    <span></span>
-                    <span class="second"></span>
-                    <span class="third"></span>
-                    <span class="fourth"></span>
-                    <span class="fifth"></span>
+                <div class="time-line-overall">
+                    <div class="timeline">
+                        <div class="timeline-status" id="time-bar"></div>
+                        <span></span>
+                        <span class="second"></span>
+                        <span class="third"></span>
+                        <span class="fourth"></span>
+                        <span class="fifth"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="timeline-content">
+                        <a href="#main-heading">
+                            <p onclick="increase(1)">Get Started</p>
+                        </a>
+                        <a href="#HTML-Problems">
+                            <p onclick="increase(2)">Html</p>
+                        </a>
+                        <a href="#CSS-Problems">
+                            <p onclick="increase(3)">CSS</p>
+                        </a>
+                        <a href="#JS-Problems">
+                            <p onclick="increase(4)">JavaScript</p>
+                        </a>
+                        <a href="#Java-Problems">
+                            <p onclick="increase(5)">Java</p>
+                        </a>
+                        <a href="#database-Problems">
+                            <p onclick="increase(6)">Data Base</p>
+                        </a>
+                        <a href="#database-Problems">
+                            <p onclick="increase(7)">JPA/Hibernate</p>
+                        </a>
+                        <a href="#database-Problems">
+                            <p onclick="increase(8)">Web Services</p>
+                        </a>
+                        <a href="#database-Problems">
+                            <p onclick="increase(9)">DevOps</p>
+                        </a>
+                        <a href="#database-Problems">
+                            <p onclick="increase(10)">Testing</p>
+                        </a>
+
+                    </div>
                 </div>
 
-                <div class="timeline-content">
-                    <p>Get Started</p>
-                    <p>Html</p>
-                    <p>CSS</p>
-                    <p>JavaScript</p>
-                    <p>Java</p>
-                    <p></p>
-
-                </div>
-                
             </aside>
             <section class="problems-container">
                 <h2>Get Started</h2>
-                <div class="main-heading">
+                <div class="main-heading" id="main-heading">
                     <h3 style="color: orangered;">Introduction to HTML & CSS</h3>
                     <p>
-                        HTML (HyperText Markup Language) is the standard language for creating web pages. It defines the structure of a webpage by using various elements like headings, paragraphs, lists, links, images, and more. Every webpage on the internet is built using HTML.
+                        HTML (HyperText Markup Language) is the standard language for creating web pages. It defines the
+                        structure of a webpage by using various elements like headings, paragraphs, lists, links,
+                        images, and more. Every webpage on the internet is built using HTML.
                     </p>
                     <p>
-                        CSS (Cascading Style Sheets) is a style sheet language used to describe the presentation of a document written in HTML. It controls the layout of multiple web pages all at once. CSS allows you to add colors, fonts, spacing, and other design elements to your webpage, making it visually appealing.
+                        CSS (Cascading Style Sheets) is a style sheet language used to describe the presentation of a
+                        document written in HTML. It controls the layout of multiple web pages all at once. CSS allows
+                        you to add colors, fonts, spacing, and other design elements to your webpage, making it visually
+                        appealing.
                     </p>
-            
+
                     <h3 style="color: orangered;">Key Concepts:</h3>
                     <ul>
-                        <li><strong>HTML:</strong> Used to define the structure of a webpage (e.g., headings, paragraphs, links).</li>
-                        <li><strong>CSS:</strong> Used to style the HTML elements (e.g., changing colors, adding margins, fonts).</li>
+                        <li><strong>HTML:</strong> Used to define the structure of a webpage (e.g., headings,
+                            paragraphs, links).</li>
+                        <li><strong>CSS:</strong> Used to style the HTML elements (e.g., changing colors, adding
+                            margins, fonts).</li>
                     </ul>
                 </div>
 
                 <div class="Problems-List">
-                    <div class="HTML-Problems">
+                    <div class="HTML-Problems" id="HTML-Problems">
                         <input type="checkbox" name="" id="faq1">
                         <label for="faq1" class="faq-question">
                             <div class="faq-content">
                                 <span>Topic-wise Html</span>
-                                 <span class="symbol">+</span>
+                                <span class="symbol">+</span>
                             </div>
                         </label>
                         <div class="faq-answer">
                             <div class="html-topics">
                                 <input type="checkbox" name="" id="html1">
-                                <label for="html1"class="topic1">HTML Basics</label>
+                                <label for="html1" class="topic1">HTML Basics</label>
                                 <div class="topic1-answer">
                                     <table>
                                         <tr>
@@ -114,12 +154,12 @@
                                         </tr>
                                     </table>
                                 </div>
-                            
+
                             </div>
 
                             <div class="html-topics">
                                 <input type="checkbox" name="" id="html2">
-                                <label for="html2"class="topic1">Links & Lists</label>
+                                <label for="html2" class="topic1">Links & Lists</label>
                                 <div class="topic1-answer topic2-answer">
                                     <table>
                                         <tr>
@@ -142,14 +182,14 @@
                                             <td>Unordered List</td>
                                             <td>webiste</td>
                                         </tr>
-                                        
+
                                     </table>
                                 </div>
-                            
+
                             </div>
                             <div class="html-topics">
                                 <input type="checkbox" name="" id="html3">
-                                <label for="html3"class="topic1">Images & Media</label>
+                                <label for="html3" class="topic1">Images & Media</label>
                                 <div class="topic1-answer topic3-answer">
                                     <table>
                                         <tr>
@@ -167,10 +207,10 @@
                                             <td>Embedding multimedia</td>
                                             <td>webiste</td>
                                         </tr>
-                                        
+
                                     </table>
                                 </div>
-                            
+
                             </div>
 
                             <div class="html-topics">
@@ -198,10 +238,10 @@
                                             <td>buttons</td>
                                             <td>webiste</td>
                                         </tr>
-                                        
+
                                     </table>
                                 </div>
-                            
+
                             </div>
 
                             <div class="html-topics">
@@ -219,10 +259,10 @@
                                             <td>Creating and styling tables.</td>
                                             <td>webiste</td>
                                         </tr>
-                                        
+
                                     </table>
                                 </div>
-                            
+
                             </div>
 
                             <div class="html-topics">
@@ -240,10 +280,10 @@
                                             <td>Use semantic tags for better structure</td>
                                             <td>webiste</td>
                                         </tr>
-                                        
+
                                     </table>
                                 </div>
-                            
+
                             </div>
 
                             <div class="html-topics">
@@ -266,10 +306,10 @@
                                             <td>Form Handling</td>
                                             <td>webiste</td>
                                         </tr>
-                                        
+
                                     </table>
                                 </div>
-                            
+
                             </div>
 
                             <div class="html-topics">
@@ -287,25 +327,25 @@
                                             <td>Understand meta tags for SEO</td>
                                             <td>webiste</td>
                                         </tr>
-                                        
+
                                     </table>
                                 </div>
-                            
+
                             </div>
                         </div>
                     </div>
-                    <div class="HTML-Problems CSS-Problems">
+                    <div class="HTML-Problems CSS-Problems" id="CSS-Problems">
                         <input type="checkbox" name="" id="css">
                         <label for="css" class="faq-question">
                             <div class="faq-content">
                                 <span> Topic-wise CSS</span>
-                                 <span class="symbol">+</span>
+                                <span class="symbol">+</span>
                             </div>
                         </label>
                         <div class="faq-answer css-answers">
                             <div class="css-topics">
                                 <input type="checkbox" name="" id="css1">
-                                <label for="css1"class="topic1">CSS Basics</label>
+                                <label for="css1" class="topic1">CSS Basics</label>
                                 <div class="topic1-answer css1-answer">
                                     <table>
                                         <tr>
@@ -328,15 +368,15 @@
                                             <td>Values</td>
                                             <td>webiste</td>
                                         </tr>
-                                        
+
                                     </table>
                                 </div>
-                            
+
                             </div>
 
                             <div class="css-topics">
                                 <input type="checkbox" name="" id="css2">
-                                <label for="css2"class="topic1">Box Model</label>
+                                <label for="css2" class="topic1">Box Model</label>
                                 <div class="topic1-answer css2-answer">
                                     <table>
                                         <tr>
@@ -359,14 +399,14 @@
                                             <td>Border</td>
                                             <td>webiste</td>
                                         </tr>
-                                        
+
                                     </table>
                                 </div>
-                            
+
                             </div>
                             <div class="html-topics">
                                 <input type="checkbox" name="" id="css3">
-                                <label for="css3"class="topic1">Flexbox</label>
+                                <label for="css3" class="topic1">Flexbox</label>
                                 <div class="topic1-answer css3-answer">
                                     <table>
                                         <tr>
@@ -384,10 +424,10 @@
                                             <td>Flex Items</td>
                                             <td>webiste</td>
                                         </tr>
-                                        
+
                                     </table>
                                 </div>
-                            
+
                             </div>
 
                             <div class="html-topics">
@@ -415,10 +455,10 @@
                                             <td>Grid Areas</td>
                                             <td>webiste</td>
                                         </tr>
-                                        
+
                                     </table>
                                 </div>
-                            
+
                             </div>
 
                             <div class="html-topics">
@@ -446,10 +486,10 @@
                                             <td>Fluid Layouts</td>
                                             <td>webiste</td>
                                         </tr>
-                                        
+
                                     </table>
                                 </div>
-                            
+
                             </div>
 
                             <div class="html-topics">
@@ -477,10 +517,10 @@
                                             <td>Animation Properties</td>
                                             <td>webiste</td>
                                         </tr>
-                                        
+
                                     </table>
                                 </div>
-                            
+
                             </div>
 
                             <div class="html-topics">
@@ -503,10 +543,10 @@
                                             <td>Using Variables</td>
                                             <td>webiste</td>
                                         </tr>
-                                        
+
                                     </table>
                                 </div>
-                            
+
                             </div>
 
                             <div class="html-topics">
@@ -529,14 +569,14 @@
                                             <td>CSS Reset</td>
                                             <td>webiste</td>
                                         </tr>
-                                        
+
                                     </table>
                                 </div>
-                            
+
                             </div>
                         </div>
                     </div>
-                    <div class="HTML-Problems JS-Problems">
+                    <div class="HTML-Problems JS-Problems" id="JS-Problems">
                         <input type="checkbox" name="" id="js">
                         <label for="js" class="faq-question">
                             <div class="faq-content">
@@ -545,7 +585,7 @@
                             </div>
                         </label>
                         <div class="faq-answer js-answers">
-                            
+
                             <!-- JavaScript Basics -->
                             <div class="js-topics">
                                 <input type="checkbox" name="" id="js1">
@@ -580,7 +620,7 @@
                                     </table>
                                 </div>
                             </div>
-                    
+
                             <!-- Functions -->
                             <div class="js-topics">
                                 <input type="checkbox" name="" id="js2">
@@ -615,7 +655,7 @@
                                     </table>
                                 </div>
                             </div>
-                    
+
                             <!-- DOM Manipulation -->
                             <div class="js-topics">
                                 <input type="checkbox" name="" id="js3">
@@ -650,7 +690,7 @@
                                     </table>
                                 </div>
                             </div>
-                    
+
                             <!-- ES6 Features -->
                             <div class="js-topics">
                                 <input type="checkbox" name="" id="js4">
@@ -685,7 +725,7 @@
                                     </table>
                                 </div>
                             </div>
-                    
+
                             <!-- Asynchronous JavaScript -->
                             <div class="js-topics">
                                 <input type="checkbox" name="" id="js5">
@@ -715,7 +755,7 @@
                                     </table>
                                 </div>
                             </div>
-                    
+
                             <!-- Error Handling -->
                             <div class="js-topics">
                                 <input type="checkbox" name="" id="js6">
@@ -745,7 +785,7 @@
                                     </table>
                                 </div>
                             </div>
-                    
+
                             <!-- Advanced Topics -->
                             <div class="js-topics">
                                 <input type="checkbox" name="" id="js7">
@@ -775,7 +815,7 @@
                                     </table>
                                 </div>
                             </div>
-                    
+
                             <!-- JavaScript Frameworks -->
                             <div class="js-topics">
                                 <input type="checkbox" name="" id="js8">
@@ -805,10 +845,10 @@
                                     </table>
                                 </div>
                             </div>
-                            
+
                         </div>
-                    </div> 
-                    <div class="HTML-Problems Java-Problems">
+                    </div>
+                    <div class="HTML-Problems Java-Problems" id="Java-Problems">
                         <input type="checkbox" name="" id="java">
                         <label for="java" class="faq-question">
                             <div class="faq-content">
@@ -817,7 +857,7 @@
                             </div>
                         </label>
                         <div class="faq-answer java-answers">
-                            
+
                             <!-- Java Fundamentals -->
                             <div class="java-topics">
                                 <input type="checkbox" name="" id="java1">
@@ -852,7 +892,7 @@
                                     </table>
                                 </div>
                             </div>
-                    
+
                             <!-- Object-Oriented Programming -->
                             <div class="java-topics">
                                 <input type="checkbox" name="" id="java2">
@@ -892,7 +932,7 @@
                                     </table>
                                 </div>
                             </div>
-                    
+
                             <!-- Java Collections -->
                             <div class="java-topics">
                                 <input type="checkbox" name="" id="java3">
@@ -927,7 +967,7 @@
                                     </table>
                                 </div>
                             </div>
-                    
+
                             <!-- Java Streams and Lambda Expressions -->
                             <div class="java-topics">
                                 <input type="checkbox" name="" id="java4">
@@ -957,7 +997,7 @@
                                     </table>
                                 </div>
                             </div>
-                    
+
                             <!-- Exception Handling -->
                             <div class="java-topics">
                                 <input type="checkbox" name="" id="java5">
@@ -987,7 +1027,7 @@
                                     </table>
                                 </div>
                             </div>
-                    
+
                             <!-- Java Web Development -->
                             <div class="java-topics">
                                 <input type="checkbox" name="" id="java6">
@@ -1022,7 +1062,7 @@
                                     </table>
                                 </div>
                             </div>
-                    
+
                             <!-- Java Database Connectivity -->
                             <div class="java-topics">
                                 <input type="checkbox" name="" id="java7">
@@ -1052,7 +1092,7 @@
                                     </table>
                                 </div>
                             </div>
-                    
+
                             <!-- Testing in Java -->
                             <div class="java-topics">
                                 <input type="checkbox" name="" id="java8">
@@ -1077,10 +1117,10 @@
                                     </table>
                                 </div>
                             </div>
-                    
+
                         </div>
                     </div>
-                    <div class="HTML-Problems Database-Problems">
+                    <div class="HTML-Problems Database-Problems" id="Database-Problems">
                         <input type="checkbox" name="" id="database">
                         <label for="database" class="faq-question">
                             <div class="faq-content">
@@ -1089,7 +1129,7 @@
                             </div>
                         </label>
                         <div class="faq-answer database-answers">
-                    
+
                             <!-- Introduction to Databases -->
                             <div class="database-topics">
                                 <input type="checkbox" name="" id="database1">
@@ -1119,7 +1159,7 @@
                                     </table>
                                 </div>
                             </div>
-                    
+
                             <!-- SQL Basics -->
                             <div class="database-topics">
                                 <input type="checkbox" name="" id="database2">
@@ -1154,7 +1194,7 @@
                                     </table>
                                 </div>
                             </div>
-                    
+
                             <!-- Advanced SQL -->
                             <div class="database-topics">
                                 <input type="checkbox" name="" id="database3">
@@ -1189,7 +1229,7 @@
                                     </table>
                                 </div>
                             </div>
-                    
+
                             <!-- Database Design -->
                             <div class="database-topics">
                                 <input type="checkbox" name="" id="database4">
@@ -1219,7 +1259,7 @@
                                     </table>
                                 </div>
                             </div>
-                    
+
                             <!-- NoSQL Databases -->
                             <div class="database-topics">
                                 <input type="checkbox" name="" id="database5">
@@ -1249,7 +1289,7 @@
                                     </table>
                                 </div>
                             </div>
-                    
+
                             <!-- Database Administration -->
                             <div class="database-topics">
                                 <input type="checkbox" name="" id="database6">
@@ -1279,7 +1319,7 @@
                                     </table>
                                 </div>
                             </div>
-                    
+
                         </div>
                     </div>
                     <div class="HTML-Problems JPA-Hibernate-Problems">
@@ -1291,7 +1331,7 @@
                             </div>
                         </label>
                         <div class="faq-answer jpa-hibernate-answers">
-                    
+
                             <!-- Entity Relationships -->
                             <div class="jpa-hibernate-topics">
                                 <input type="checkbox" name="" id="jpa-hibernate1">
@@ -1326,11 +1366,12 @@
                                     </table>
                                 </div>
                             </div>
-                    
+
                             <!-- JPQL -->
                             <div class="jpa-hibernate-topics">
                                 <input type="checkbox" name="" id="jpa-hibernate2">
-                                <label for="jpa-hibernate2" class="topic1">JPQL (Java Persistence Query Language)</label>
+                                <label for="jpa-hibernate2" class="topic1">JPQL (Java Persistence Query
+                                    Language)</label>
                                 <div class="topic1-answer jpa-hibernate2-answer">
                                     <table>
                                         <tr>
@@ -1361,7 +1402,7 @@
                                     </table>
                                 </div>
                             </div>
-                    
+
                             <!-- Caching -->
                             <div class="jpa-hibernate-topics">
                                 <input type="checkbox" name="" id="jpa-hibernate3">
@@ -1396,7 +1437,7 @@
                                     </table>
                                 </div>
                             </div>
-                    
+
                         </div>
                     </div>
                     <div class="HTML-Problems Web-Services-Problems">
@@ -1408,7 +1449,7 @@
                             </div>
                         </label>
                         <div class="faq-answer web-services-answers">
-                    
+
                             <!-- RESTful APIs -->
                             <div class="web-services-topics">
                                 <input type="checkbox" name="" id="restful-apis">
@@ -1438,7 +1479,7 @@
                                     </table>
                                 </div>
                             </div>
-                    
+
                             <!-- SOAP APIs (Optional) -->
                             <div class="web-services-topics">
                                 <input type="checkbox" name="" id="soap-apis">
@@ -1468,7 +1509,7 @@
                                     </table>
                                 </div>
                             </div>
-                    
+
                             <!-- API Documentation -->
                             <div class="web-services-topics">
                                 <input type="checkbox" name="" id="api-documentation">
@@ -1503,7 +1544,7 @@
                                     </table>
                                 </div>
                             </div>
-                    
+
                         </div>
                     </div>
                     <div class="HTML-Problems DevOps-Problems">
@@ -1515,7 +1556,7 @@
                             </div>
                         </label>
                         <div class="faq-answer devops-answers">
-                    
+
                             <!-- Version Control Systems -->
                             <div class="devops-topics">
                                 <input type="checkbox" name="" id="version-control-systems">
@@ -1555,7 +1596,7 @@
                                     </table>
                                 </div>
                             </div>
-                    
+
                             <!-- Build Tools -->
                             <div class="devops-topics">
                                 <input type="checkbox" name="" id="build-tools">
@@ -1590,7 +1631,7 @@
                                     </table>
                                 </div>
                             </div>
-                    
+
                             <!-- CI/CD -->
                             <div class="devops-topics">
                                 <input type="checkbox" name="" id="ci-cd">
@@ -1625,7 +1666,7 @@
                                     </table>
                                 </div>
                             </div>
-                    
+
                         </div>
                     </div>
                     <div class="HTML-Problems Testing-Problems">
@@ -1637,7 +1678,7 @@
                             </div>
                         </label>
                         <div class="faq-answer testing-answers">
-                    
+
                             <!-- Unit Testing -->
                             <div class="testing-topics">
                                 <input type="checkbox" name="" id="unit-testing">
@@ -1672,7 +1713,7 @@
                                     </table>
                                 </div>
                             </div>
-                    
+
                             <!-- Integration Testing -->
                             <div class="testing-topics">
                                 <input type="checkbox" name="" id="integration-testing">
@@ -1697,7 +1738,7 @@
                                     </table>
                                 </div>
                             </div>
-                    
+
                             <!-- Frontend Testing -->
                             <div class="testing-topics">
                                 <input type="checkbox" name="" id="frontend-testing">
@@ -1732,20 +1773,20 @@
                                     </table>
                                 </div>
                             </div>
-                    
+
                         </div>
                     </div>
-                    
-                    
-                    
-                    
-                    
-                     
+
+
+
+
+
+
                 </div>
-            
+
             </section>
-            
-            
+
+
         </section>
 
     </main>
@@ -1756,7 +1797,7 @@
                 <h3>Path2Master</h3>
                 <p>Your one-stop platform for web development resources, coding challenges, and interview prep.</p>
             </div>
-    
+
             <!-- Quick Links Section -->
             <div class="footer-links">
                 <h4>Quick Links</h4>
@@ -1768,7 +1809,7 @@
                     <li><a href="#">Contact Us</a></li>
                 </ul>
             </div>
-    
+
             <!-- Social Media Section -->
             <div class="footer-social">
                 <h4>Follow Us</h4>
@@ -1780,7 +1821,7 @@
                     <li><a href="#"><i class="fab fa-github"></i></a></li>
                 </ul>
             </div>
-            
+
             <!-- Contact Section -->
             <div class="footer-contact">
                 <h4>Contact Us</h4>
@@ -1789,11 +1830,13 @@
                 <p>Address: address</p>
             </div>
         </div>
-    
+
         <!-- Copyright Section -->
         <div class="footer-bottom">
             <p>&copy; 2024 Path2Master. All rights reserved.</p>
         </div>
     </footer>
+    <script src="WDproblems.js"></script>
 </body>
+
 </html>
