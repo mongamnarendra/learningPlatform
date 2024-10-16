@@ -95,7 +95,7 @@ button:hover{
 }
 
 .hero{
-    background: linear-gradient(to right, rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.3)), url(map.jpg);
+    background: linear-gradient(to right, rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.3)), url(../assests/map.jpg);
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;

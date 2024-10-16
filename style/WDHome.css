@@ -85,7 +85,7 @@ nav ul li a {
 /* ------------------hero section--------------------------------- */
 
 .hero {
-    background: linear-gradient(to right, rgb(0,0,0,0.7), rgb(0,0,0,0.7)),url("9776524.jpg");
+    background: linear-gradient(to right, rgb(0,0,0,0.7), rgb(0,0,0,0.7)),url("../assests/9776524.jpg");
     background-position: center;
     background-size: cover; 
     background-repeat: no-repeat;
