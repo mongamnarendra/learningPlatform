@@ -1,0 +1,328 @@
+body {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    border: 2px solid white;
+    padding: 0px 1%;
+    font-weight: 600;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    box-shadow:  0 0 10px orangered,
+    0 0 20px orangered,
+    0 0 3px orangered,
+    0 0 40px orangered;
+}
+
+.logo h1{
+    font-size: 32px;
+    text-shadow: 0 0 10px orangered,
+                 0 0 20px orangered,
+                 0 0 40px orangered,
+                 0 0 80px orangered;
+}
+
+.links{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+nav a{
+    position: relative;
+    text-decoration: none;
+    padding: 0 1% 0.5% 1%;
+    margin: 1%;
+    color: #fff;
+    font-size: 15px;
+    justify-content: space-between;
+    transition: .5s;
+}
+
+nav a:hover{
+    color: Orangered;
+}
+nav a span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-bottom: 2px  solid orangered;
+    /* border-radius: 15px; */
+    transform: scale(0) translateY(50px);
+    opacity: 0;
+    transition: .5s;
+}
+nav a:hover span{
+    transform:scale(1) translateY(0);
+    opacity: 1;
+}
+button{
+    width: 100px;
+    height: 40px;
+    padding: 2%;
+    border: none;
+    margin: 0 20px 0 0;
+    border-radius: 10px;
+    background-color: orangered;
+    color: #fff;
+    font-weight: 500;
+    transition: transform 450ms;
+    cursor: pointer;
+    outline: none;
+}
+button:hover{
+    transform: scale(1.2);
+    border: 2px solid white;
+    box-shadow: 0 0 10px orangered,
+                 0 0 20px orangered;
+                 
+}
+  
+  h2{
+    color:black
+  }
+  h3{
+    color: black;
+  }
+  
+  
+  .card {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 50px;
+  }
+  
+  .flip-card {
+  background-color: transparent;
+  width: 500px;
+  height: 300px;
+  perspective: 1000px;
+  margin: 20px 0px 50px;
+  }
+  .flip-card h2{
+    color:orangered;
+  }
+  
+  .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  }
+  
+  
+  .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  }
+  
+  
+  .flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  }
+  
+  .flip-card-front {
+  background-color: #fff;
+  color: black;
+  }
+  
+  
+  .flip-card-back {
+  background-color: #f1f1f1;
+  color: black;
+  transform: rotateY(180deg);
+  padding: 30px;
+  }
+  
+  
+  .flip-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+  }
+  
+  h1 {
+  text-align: center;
+  font-size: 24px;
+  margin: 10px 0;
+  }
+  
+  .flip-card-back h2 {
+  font-size: 20px;
+  margin: 10px 0;
+  color:orangered;
+  }
+  .flip-card-back h3 {
+  font-size: 16px;
+  margin: 10px 0;
+  color:#222
+  
+  }
+  
+  .flip-card-back button {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  }
+  
+  .flip-card-back button:hover {
+  background-color: #45a049;
+  }
+  
+  
+  h1 {
+  margin-bottom: 30px;
+  color: orangered; /* Make the header visible on a black background */
+  }
+  h3{
+  color:white;
+  }
+  
+  /* Styling for the card container */
+  .card1{
+  background-color: #222; /* Dark gray instead of black for better contrast */
+  border-radius: 8px;
+  box-shadow: 0px 4px 20px rgba(255, 69, 0, 0.5); /* More pronounced shadow */
+  padding: 20px;
+  margin: 0 auto;
+  width: 90%;
+  text-align: left;
+  }
+  
+  /* FAQ container styling */
+  .faq-container details {
+  margin-bottom: 15px;
+  border-bottom: 1px solid orangered; /* Fine as it stands */
+  padding-bottom: 10px;
+  }
+  
+  /* Summary (questions) styling */
+  summary {
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white; /* Keeps the question color */
+  }
+  
+  /* Style the answer paragraphs */
+  details p {
+  font-size: 16px;
+  margin-top: 5px;
+  color: white; /* Change to white for better visibility */
+  }
+  
+  /* Adding a hover effect to the questions */
+  summary:hover {
+  color: orangered; /* Slightly different hover color for feedback */
+  }
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    font-family: 'Arial', sans-serif;
+    text-align: left;
+    margin: 4% 0 0 0;
+    width: 100%;
+  }
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .footer-about p {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.6;
+  }
+  .footer-links h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  .footer-links ul li {
+    margin-bottom: 10px;
+  }
+  .footer-links ul li a {
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s ease;
+  }
+  .footer-links ul li a:hover{
+    color: orangered;
+  }
+  .footer-social h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  .social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+  }
+  .social-icons li a {
+    color: #ccc;
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+  .social-icons li a:hover{
+    color: orangered;
+  }
+  .footer-contact h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  .footer-contact p {
+    font-size: 14px;
+    color: #ccc;
+    margin: 5px 0;
+  }
+  .footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #222;
+    margin-top: 30px;
+  }
+  .footer-bottom p {
+    font-size: 14px;
+    color: #ccc;
+  }
