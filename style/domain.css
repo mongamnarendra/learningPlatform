@@ -101,6 +101,7 @@ button:hover{
     justify-content: center;
     align-items: center;
     position: relative;
+    background: linear-gradient(to right,#111111b5,#111111b5) ,url("https://www.kridha.net/wp-content/uploads/2022/04/Slide1-37.jpg");
   }
 .hero-content {
    text-align: center;
@@ -111,7 +112,8 @@ button:hover{
    animation: fadeIn 2s ease-in-out;
 }
 .hero-subheading {
-   font-size: 1.5rem;
+   font-size: 1.4rem;
+   font-weight: 500;
    color: orangered;
    margin: 1rem 1rem;
    animation: fadeIn 2.5s ease-in-out;
@@ -198,6 +200,8 @@ button:hover{
         transform: translateY(0);
     }
   } 
+
+
 #domains{
     background-color: #222;
     
@@ -217,7 +221,9 @@ button:hover{
     /* border: 4px dotted white; */
     margin: 2% 2% 4% 2%;
     border-radius: 8px;
-    box-shadow: 0 0 10px white;
+    box-shadow: 0 0 5px white,
+    0 0 10px white,
+    0 0 15px white;
     transition: transform 1s;
 }
 .domain-cards:hover{
@@ -240,7 +246,7 @@ button:hover{
     padding: 0 0 2% 0;
 }
 .domain-right p{
-    font-style: italic;
+    font-size: 1.1rem;
 }
 .dive-in-button{
     width: 80px;
