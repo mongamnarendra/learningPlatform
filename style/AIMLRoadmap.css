@@ -1,0 +1,574 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #111;
+    color: white;
+}
+
+/* ---------------------------navbar------------------------------- */
+
+nav {
+    width: 98%;
+    height: 70px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 2px 5px orangered;
+    margin: 10px;
+    
+}
+
+nav ul li {
+    display: inline;
+    margin: 0px 20px 0px 0px;
+    position: relative;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+nav ul li::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: orangered;
+    top: 20px;
+    left: 50%;
+    transition: all .2s linear;
+}
+
+nav ul li:hover::before{
+    width: 100%;
+    transform: translateX(-50%);
+}
+
+nav ul li:hover {
+    color:  orange;
+}
+
+.logo {
+    margin: 0px 0px 0px 20px;
+}
+
+nav button {
+    width: 100px;
+    height: 40px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: scale .3s linear;
+}
+
+button:nth-child(1) {
+    background-color: orange;
+}
+
+.button button:hover {
+    transform: scale(1.1);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* -----------------------roadmap design---------------------------- */
+
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    color: orangered;
+    margin-bottom: 40px;
+}
+.icon-name{
+    color: white;
+}
+
+.timeline {
+    position: relative;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: orangered;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+}
+
+/* Timeline items */
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 0; /* Initially hide items */
+}
+
+.timeline-item.left {
+    left: 0;
+    animation: slideInLeft 0.6s ease-out forwards;
+}
+
+.timeline-item.right {
+    left: 50%;
+    animation: slideInRight 0.6s ease-out forwards;
+}
+
+/* Assign delay to each timeline item */
+.timeline-item.left:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.timeline-item.right:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.timeline-item.left:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.timeline-item.right:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.timeline-item.left:nth-child(5) {
+    animation-delay: 1s;
+}
+
+.timeline-item.right:nth-child(6) {
+    animation-delay: 1.2s;
+}
+
+.timeline-item.left:nth-child(7) {
+    animation-delay: 1.4s;
+}
+.timeline-item.right:nth-child(8) {
+    animation-delay: 1.4s;
+}
+
+/* Align text and icons */
+.timeline-item.left .icon-name {
+    text-align: right;
+}
+
+.timeline-item.right .icon-name {
+    text-align: left;
+}
+
+/* Icon styles */
+.icon {
+    font-size: 25px;
+    color: orangered;
+    margin-bottom: 10px;
+    display: block; /* Center the icon */
+}
+
+/* icons colors*/
+.fa-html5{
+    font-size: 30px;
+    color: orangered;
+
+}
+
+.fa-css3-alt{
+    font-size: 30px;
+    color: blue;
+}
+.fa-js{
+    font-size: 30px;
+    color: yellow;
+}
+.fa-git{
+    font-size: 30px;
+    color: white;
+}
+.fa-react{
+    font-size: 30px;
+    color: orangered;
+}
+.fa-angular{
+    font-size: 30px;
+    color: white;
+}
+.fa-vuejs{
+    font-size: 30px;
+    color: orangered;
+}
+.fa-node{
+    font-size: 30px;
+    color: orangered;
+}
+.fa-java{
+    font-size: 30px;
+    color: yellow;
+}
+.fa-python{
+    font-size: 30px;
+    color: blue;
+}
+.fa-aws{
+    font-size: 30px;
+    color: white;
+}
+.fa-database{
+    font-size: 30px;
+    color: orangered;
+}
+.fa-gear{
+    font-size: 30px;
+    color: white;
+}
+.fa-wrench{
+    font-size: 30px;
+    color: orangered;
+}
+.fa-shield{
+    font-size: 30px;
+    color: blue;
+}
+.fa-lock{
+    font-size: 30px;
+    color: yellow;
+}
+.fa-key{
+    font-size: 30px;
+    color: green;
+}
+
+.icon-name:hover {
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+
+
+
+
+/* Horizontal branch styles */
+.branch {
+    height: 4px; /* Thickness of the branch */
+    width: 5%; /* Width of the branch */
+    background-color: orangered; /* Change color as needed */
+    position:absolute;
+    top: 30px; /* Position the branch relative to the icon */
+    
+    left: 20%; /* Center align the branch */
+    margin-left: -20%; /* Center it */
+}
+
+.branch1 {
+    height: 4px; /* Thickness of the branch */
+    width: 5%; /* Width of the branch */
+    background-color: orangered; /* Change color as needed */
+    position:absolute;
+    top: 30px; /* Position the branch relative to the icon */
+    
+    right: 20%; /* Center align the branch */
+    margin-right: -20%; /* Center it */
+}
+
+/* Animation */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+/* ---------------------Resources--------------------- */
+
+.resources {
+    margin: 100px 20px;
+}
+
+h2 {
+    color: orangered; 
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .resources h3
+  {
+    color: orangered;
+  }
+  
+  .resource-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    padding: 20px 0;
+  }
+  
+  .resource-card{
+    background-color: #1c1c1c; 
+     border: 2px solid orangered; 
+    border-radius: 40px;
+    padding: 20px;
+    width: 330px;
+    box-shadow: 0px 4px 12px rgba(255, 140, 0, 0.5); 
+    float: left;
+    margin: 15px;
+    margin-bottom: 50px;
+    z-index: 10; 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    
+  }
+  
+  .resource-card:hover
+   {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+   }
+  
+  .resource-card img 
+  {
+    max-width: 80%; 
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6); 
+  }
+  /* .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  } */
+  .resources ul {
+    list-style-type: none; 
+    padding-left: 0; 
+    text-align: left;
+  }
+  
+  .resources ul li {
+    margin: 15px 0;
+    font-size: 18px;
+  }
+  
+  .resources ul li a {
+    text-decoration: none;
+    color: orangered; 
+    font-weight: bold;
+  }
+  
+  .resources ul li a:hover 
+  {
+    text-decoration: underline;
+  }
+  
+  .resources ul li i {
+    margin-right: 10px; /* Space between icon and text */
+  }
+  
+  .resources details {
+    background-color: #1c1c1c;
+    /* border: 1px solid orangered; */
+    /* border-radius: 5px; */
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    color: white;
+    position: relative; 
+   
+  }
+  
+  .resources details[open] summary
+   {
+    color: rgba(255, 166, 0, 0.887);
+  }
+  
+  .resources details ul {
+    margin-top: 10px;
+    padding-left: 20px;
+    position: absolute; 
+    top: 100%; 
+    left: 0;
+    background-color: #1c1c1c;
+    width: 100%;
+    z-index: 25;
+    list-style-type: none;
+    padding-left: 0;
+    display: block;
+  }
+  
+  .resources details ul li {
+    margin-bottom: 10px;
+    color: orangered;
+    text-align: center;
+  }
+  
+  .resources details ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .resources details ul li a:hover {
+    text-decoration: underline;
+    color: orangered;
+  }
+  
+  .resources summary {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    outline: none;
+    text-align: left;
+    z-index: 1;
+  }
+
+  .resources summary:hover
+  {
+    color: orangered;
+  }
+  .resources i
+  {
+    color: orangered;
+  }
+
+  /* ------------------------footer----------------------------- */
+
+/* Footer Container */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    font-family: 'Arial', sans-serif;
+    text-align: left;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* About Section */
+.footer-about h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer-about p {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Links Section */
+.footer-links h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: orangered;
+}
+
+/* Social Media Section */
+.footer-social h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons li a {
+    color: #ccc;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-icons li a:hover {
+    color: orangered;
+}
+
+/* Contact Section */
+.footer-contact h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer-contact p {
+    font-size: 14px;
+    color: #ccc;
+    margin: 5px 0;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #222;
+    margin-top: 30px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #ccc;
+}
