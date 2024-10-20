@@ -178,7 +178,7 @@ aside .timeline-content p {
     position: absolute;
     top: 0;
     width: 5px;
-    height: 100%;
+    height: 10%;
     background-color: orangered;
     animation: time .6s linear;
 }
