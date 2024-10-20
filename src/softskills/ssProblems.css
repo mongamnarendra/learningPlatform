@@ -1,0 +1,755 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #111;
+    color: white;
+}
+
+/* ---------------------------navbar------------------------------- */
+
+nav {
+    width: 98%;
+    height: 70px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 2px 5px orangered;
+    margin: 10px;
+    
+}
+
+nav ul li {
+    display: inline;
+    margin: 0px 20px 0px 0px;
+    position: relative;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+nav ul li::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: orangered;
+    top: 20px;
+    left: 50%;
+    transition: all .2s linear;
+}
+
+nav ul li:hover::before{
+    width: 100%;
+    transform: translateX(-50%);
+}
+
+nav ul li:hover {
+    color:  orange;
+}
+
+.logo {
+    margin: 0px 0px 0px 20px;
+}
+
+nav button {
+    width: 100px;
+    height: 40px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: scale .3s linear;
+}
+
+button:nth-child(1) {
+    background-color: orange;
+}
+
+.button button:hover {
+    transform: scale(1.1);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* -----------------------main area------------------------------- */
+
+.container {
+    display: flex;
+}
+
+aside {
+    width: 20%;
+    height: 89vh;
+    background-color: #222;
+    margin-left: 10px;
+}
+
+
+
+
+/* ------------------------------aside---------------------------- */
+
+aside {
+    display: flex;
+}
+
+.timeline {
+    width: 5px;
+    height: 90%;
+    background-color: white;
+    margin: 20px 10px 0px 50px;
+    border-radius: 50px;
+    position: relative;
+}
+
+aside span {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: orangered;
+    top: 5%;
+    left: -5px;
+}
+
+aside .second {
+    position: absolute;
+    top: 17.5%;
+}
+
+aside .third {
+    position: absolute;
+    top: 29.5%;
+}
+
+aside .fourth {
+    position: absolute;
+    top: 42%;
+}
+
+aside .fifth {
+    position: absolute;
+    top: 54%;
+}
+
+aside p {
+    width: 100px;
+
+}
+
+aside .timeline-content {
+    margin: 27px 10px 0px 15px;
+    cursor: pointer;
+}
+
+.timeline-content p:hover {
+    transform: scale(0.9);
+    color: orangered;
+}
+
+
+aside .timeline-content p {
+    padding: 20px 0px 30px;
+}
+
+.timeline-status {
+    position: absolute;
+    top: 0;
+    width: 5px;
+    height: 10%;
+    background-color: orangered;
+    animation: time .6s linear;
+}
+
+@keyframes time {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 10%;
+    }
+}
+
+
+
+/* ----------------------------problem container--------------------- */
+
+.problems-container {
+    width: 77.4%;
+    height: 89vh;
+    background-color: #222;
+    margin-left: 10px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    overflow: auto;
+}
+
+.problems-container::-webkit-scrollbar {
+    display: none;
+}
+
+.main-heading {
+    margin-left: 20px;
+}
+
+.main-heading ul li {
+    margin-left: 60px;
+}
+
+.problems-container h2 {
+    text-align: center;
+}
+
+/* -----------------------Problems list----------------------- */
+.Problems-List {
+    margin-top: 20px;
+    color: #111;
+}
+
+.HTML-Problems {
+    margin: 20px 40px;
+}
+
+#faq1 {
+    display: none;
+}
+
+.faq-question {
+    display: block;
+    width: 90%;
+    height: 50px;
+    background-color: white;
+    padding: 10px 0px 0px 20px;
+    cursor: pointer;
+    transition: background .3s ease-in;
+    border-radius: 5px;
+    
+}
+
+.faq-question:hover {
+    background-color: orangered;
+}
+
+.faq-answer {
+    display: none;
+    width: 90%; 
+    background-color: #111;
+    color: white;
+    padding: 10px 0px 10px 20px;
+    box-sizing: border-box; 
+}
+
+#faq1:checked ~ .faq-question{
+    background-color: orangered;
+}
+
+#faq1:checked  .timeline-status {
+    height: 20%;
+}
+
+#faq1:checked ~ .faq-answer {
+    display: block;
+}
+
+.faq-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq-content .symbol {
+    margin-right: 30px;
+    font-size: 1.8rem;
+    margin-top: -10px;
+}
+
+
+/* ----------------------sub topics--------------------- */
+
+#html1, #html2, #html3, #html4, #html5, #html6, #html7, #html8, #css {
+    display: none;
+}
+
+#css1, #css2, #css3,#css4, #css5, #css6, #css7, #css8 {
+    display: none;
+}
+
+#js, #js1, #js2, #js3, #js4, #js5, #js6, #js7, #js8 {
+    display: none;
+}
+
+#java, #java1, #java2, #java3, #java4, #java5, #java6, #java7, #java8 {
+    display: none;
+}
+
+#database, #database1, #database2, #database3, #database4, #database5, #database6 {
+    display: none;
+}
+
+#jpa-hibernate, #jpa-hibernate1, #jpa-hibernate2, #jpa-hibernate3 {
+    display: none;
+}
+
+#web-services, #restful-apis, #soap-apis, #api-documentation {
+    display: none;
+}
+
+
+.topic1 {
+    width: 98%;
+    background-color: #222;
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    box-shadow: 3px 5px 10px orangered;
+}
+
+.topic1-answer {
+    display: none;
+    margin: 0px 0px 10px 0px;
+    background-color: #333;
+    width: 98%;
+}
+
+#html1:checked ~ .topic1-answer {
+    display: block;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+     
+}
+
+tr, td, th{
+    border: 1px solid black;
+}
+
+#html2:checked ~ .topic2-answer {
+    display: block;
+}
+
+#html3 {
+    display: none;
+}
+
+#html3:checked ~ .topic3-answer {
+    display: block;
+}
+
+#html4:checked ~ .topic4-answer {
+    display: block;
+}
+
+#html5:checked ~ .topic5-answer {
+    display: block;
+}
+
+#html6:checked ~ .topic6-answer {
+    display: block;
+}
+
+#html7:checked ~ .topic7-answer {
+    display: block;
+}
+
+#html8:checked ~ .topic8-answer {
+    display: block;
+}
+
+
+#css:checked ~ .css-answers  {
+    display: block;
+}
+
+
+#css1:checked ~ .css1-answer {
+    display: block;
+}
+
+#css2:checked ~ .css2-answer {
+    display: block;
+}
+
+#css3:checked ~ .css3-answer {
+    display: block;
+}
+
+#css4:checked ~ .css4-answer {
+    display: block;
+}
+
+#css5:checked ~ .css5-answer {
+    display: block;
+}
+
+#css6:checked ~ .css6-answer {
+    display: block;
+}
+
+#css7:checked ~ .css7-answer {
+    display: block;
+}
+
+#css8:checked ~ .css8-answer {
+    display: block;
+}
+
+
+#js:checked ~ .js-answers  {
+    display: block;
+}
+
+
+#js1:checked ~ .js1-answer {
+    display: block;
+}
+
+#js2:checked ~ .js2-answer {
+    display: block;
+}
+
+#js3:checked ~ .js3-answer {
+    display: block;
+}
+
+#js4:checked ~ .js4-answer {
+    display: block;
+}
+
+#js5:checked ~ .js5-answer {
+    display: block;
+}
+
+#js6:checked ~ .js6-answer {
+    display: block;
+}
+
+#js7:checked ~ .js7-answer {
+    display: block;
+}
+
+#js8:checked ~ .js8-answer {
+    display: block;
+}
+
+
+/* ------------------java---------------------- */
+
+
+#java:checked ~ .java-answers  {
+    display: block;
+}
+
+
+#java1:checked ~ .java1-answer {
+    display: block;
+}
+
+#java2:checked ~ .java2-answer {
+    display: block;
+}
+
+#java3:checked ~ .java3-answer {
+    display: block;
+}
+
+#java4:checked ~ .java4-answer {
+    display: block;
+}
+
+#java5:checked ~ .java5-answer {
+    display: block;
+}
+
+#java6:checked ~ .java6-answer {
+    display: block;
+}
+
+#java7:checked ~ .java7-answer {
+    display: block;
+}
+
+#java8:checked ~ .java8-answer {
+    display: block;
+}
+
+
+
+
+
+
+/* ----------------jpa-hibernate----------------------- */
+
+
+#jpa-hibernate:checked ~ .jpa-hibernate-answers  {
+    display: block;
+}
+
+
+#jpa-hibernate1:checked ~ .jpa-hibernate1-answer {
+    display: block;
+}
+
+#jpa-hibernate2:checked ~ .jpa-hibernate2-answer {
+    display: block;
+}
+
+#jpa-hibernate3:checked ~ .jpa-hibernate3-answer {
+    display: block;
+}
+
+
+
+/* ----------------------web services---------- */
+
+#web-services:checked ~ .web-services-answers  {
+    display: block;
+}
+
+#restful-apis:checked ~ .restful-apis-answer  {
+    display: block;
+}
+
+#soap-apis:checked ~ .soap-apis-answer  {
+    display: block;
+}
+
+#api-documentation:checked ~ .api-documentation-answer  {
+    display: block;
+}
+
+
+/* ------------------------database------------------------- */
+
+#database:checked ~ .database-answers  {
+    display: block;
+}
+
+#database1:checked ~ .database1-answer {
+    display: block;
+}
+
+#database2:checked ~ .database2-answer {
+    display: block;
+}
+
+#database3:checked ~ .database3-answer {
+    display: block;
+}
+
+#database4:checked ~ .database4-answer {
+    display: block;
+}
+
+#database5:checked ~ .database5-answer {
+    display: block;
+}
+
+#database6:checked ~ .database6-answer {
+    display: block;
+}
+
+
+
+
+/* -------------------DevOps---------------------- */
+
+#devops, #version-control-systems, #build-tools, #ci-cd {
+    display: none;
+}
+
+#devops:checked ~ .devops-answers  {
+    display: block;
+}
+
+#version-control-systems:checked ~ .version-control-systems-answer  {
+    display: block;
+}
+
+#build-tools:checked ~ .build-tools-answer  {
+    display: block;
+}
+
+#ci-cd:checked ~ .ci-cd-answer {
+    display: block;
+}
+
+
+
+/* -------------------------------testing--------------------------------- */
+
+#testing, #unit-testing, #integration-testing, #frontend-testing {
+    display: none;
+}
+
+#testing:checked ~ .testing-answers  {
+    display: block;
+}
+
+#unit-testing:checked ~ .unit-testing-answer  {
+    display: block;
+}
+
+#integration-testing:checked ~ .integration-testing-answer  {
+    display: block;
+}
+
+#frontend-testing:checked ~ .frontend-testing-answer {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------- Footer ------------------- */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    font-family: 'Arial', sans-serif;
+    text-align: left;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* About Section */
+.footer-about h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer-about p {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Links Section */
+.footer-links h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: orangered;
+}
+
+/* Social Media Section */
+.footer-social h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons li a {
+    color: #ccc;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-icons li a:hover {
+    color: orangered;
+}
+
+/* Contact Section */
+.footer-contact h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer-contact p {
+    font-size: 14px;
+    color: #ccc;
+    margin: 5px 0;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #222;
+    margin-top: 30px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #ccc;
+}
